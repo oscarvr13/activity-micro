@@ -30,7 +30,8 @@ public class Swagger2Config {
   }
 
   private ApiInfo apiEndPointsInfo() {
-    return new ApiInfoBuilder().title("Spring Boot Activity REST API")
+    return new ApiInfoBuilder().title("Spring Boot Activity REST API" +
+        "Creating a merge problem")
         .description("Activity Management REST API")
         .contact(new Contact("Fernando Rodriguez", "www.javaguides.net", "fernandoRod@gmail.com"))
         .license("Apache 2.0")
