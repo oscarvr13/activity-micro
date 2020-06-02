@@ -32,10 +32,10 @@ public class Swagger2Config {
   private ApiInfo apiEndPointsInfo() {
     return new ApiInfoBuilder().title("Spring Boot Activity REST API")
         .description("Activity Management REST API")
-        .contact(new Contact("Oscar Vazquez", "www.javaguides.net", "oscarvr1213@gmail.com"))
+        .contact(new Contact("Gustavo Vigil", "www.javaguides.net", "gustavoVigil@gmail.com"))
         .license("Apache 2.0")
         .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
-        .version("1.0.0")
+        .version("1.3.4")
         .build();
   }
 }
