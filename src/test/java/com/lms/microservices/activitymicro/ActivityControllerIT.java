@@ -25,7 +25,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Transactional
 public class ActivityControllerIT {
-
+//Some changes added externally
     @Autowired
     private TestRestTemplate restTemplate;
     private Object ResponseEntity;
