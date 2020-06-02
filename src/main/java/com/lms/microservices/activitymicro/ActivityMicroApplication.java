@@ -8,6 +8,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 public class ActivityMicroApplication {
 
+  //Adding some changes for the branch branchToNewDev
+
   /**
    * Main method.
    * @param args Args received.
