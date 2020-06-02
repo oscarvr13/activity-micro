@@ -13,7 +13,7 @@ import springfox.documentation.annotations.ApiIgnore;
 public interface ActivityApi {
 
 
-  @GetMapping(value = "/getTestBranch",
+  @GetMapping(value = "/getTestNoBranch",
       produces = {MediaType.APPLICATION_JSON_VALUE,
           MediaType.APPLICATION_ATOM_XML_VALUE
       })

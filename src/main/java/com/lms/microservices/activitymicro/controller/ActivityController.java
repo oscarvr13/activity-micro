@@ -30,6 +30,11 @@ public class ActivityController implements ActivityApi {
 
   private final PropertiesDto propertiesDto;
 
+  @Override
+  public ResponseEntity<List<ActivityDto>> getTestBranch() {
+    return null;
+  }
+
   @PutMapping("/putTest")
   @Override
   public ResponseEntity<List<ActivityDto>> getTest() {
