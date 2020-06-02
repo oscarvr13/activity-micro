@@ -12,6 +12,13 @@ import springfox.documentation.annotations.ApiIgnore;
 
 public interface ActivityApi {
 
+
+  @GetMapping(value = "/getTestBranch",
+      produces = {MediaType.APPLICATION_JSON_VALUE,
+          MediaType.APPLICATION_ATOM_XML_VALUE
+      })
+  ResponseEntity<List<ActivityDto>> getTestBranch();
+
   @GetMapping(value = "/getTest",
       produces = {MediaType.APPLICATION_JSON_VALUE,
           MediaType.APPLICATION_ATOM_XML_VALUE
