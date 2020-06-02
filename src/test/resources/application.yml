@@ -1,0 +1,22 @@
+path:
+  request:
+    mapping:
+      questionnaire:
+        controller: /v1/lms/activities
+      request:
+        activities:
+        activity: /{activityId}
+      put:
+        activity: /{activityId}
+      delete:
+        activity: /{activityId}
+
+
+spring:
+  datasource:
+   url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
+  application:
+    name: activity-micro

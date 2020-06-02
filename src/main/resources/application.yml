@@ -1,0 +1,45 @@
+server:
+  port: 8082
+path:
+  request:
+    mapping:
+      questionnaire:
+        controller: /v1/lms/activities
+      request:
+        activities:
+        activity: /{activityId}
+      put:
+        activity: /{activityId}
+      delete:
+        activity: /{activityId}
+eureka:
+  instance:
+    nonSecurePortEnabled: true
+    securePortEnabled: false
+  client:
+    serviceUrl:
+      defaultZone: http://oscar-inspiron-5567:8080/eureka/, http://localhost:8761/eureka/
+  enabled: true
+spring:
+  application:
+    name: activity-micro
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC
+    username: root
+    password: 1t2e4stP!
+  profiles:
+    active: test
+  jpa:
+   show-sql: true
+  cloud:
+   discovery:
+     enabled: true
+   config:
+     uri: http://localhost:8888
+logging.level.com.lms.microservices.activitymicro.controller.ActivityController: DEBUG
+general-props.prop1: 1
+general-props.prop2: hola
+general-props.prop3: true
+
+
+

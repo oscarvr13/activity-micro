@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: activity-micro
+  cloud:
+    config:
+      uri: http://localhost:8888
+server:
+  port: 8082
+general-props.prop1: 11
